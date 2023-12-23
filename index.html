@@ -9,10 +9,7 @@
   <title>Frontend Mentor | FAQ accordion</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
   <article>
@@ -23,17 +20,20 @@
     </h1>
   </div>
   
-  <div class="questions">
+  <div class="question1 question">
   
-    <h5>
+    <h4>
       What is Frontend Mentor, and how will it help me?
-    </h5>
-    <button id="button" onclick="revealanswers()">
+    </h4>
+    <button onclick="reveal()" id="hide-button" style="display: none;">
+      <img id="images" src="./assets/images/icon-minus.svg" alt="icon-plus">
+      </button>
+    <button onclick="reveal()" id="reveal-button">
       <img id="images" src="./assets/images/icon-plus.svg" alt="icon-plus">
-    </button>
-  </div>
-  <div class="answers">
-    <p>
+      </button>
+    </div>
+  <div >
+    <p id="hidden-answer1" >
       Frontend Mentor offers realistic coding challenges to help developers improve their 
       frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
       all levels and ideal for portfolio building.
@@ -41,18 +41,19 @@
   </div>
   <hr>
 
-    <div class="questions">
-    <h5>
+    <div class="question2 question">
+    <h4>
       Is Frontend Mentor free?
-    </h5>
-
-    <button id="button" onclick="revealanswers()">
+    </h4>
+    <button onclick="reveal2()" id="hide-button1" style="display: none;">
+      <img id="images" src="./assets/images/icon-minus.svg" alt="icon-plus">
+      </button>
+    <button onclick="reveal2()" id="reveal-button1">
       <img id="images" src="./assets/images/icon-plus.svg" alt="icon-plus">
-    </button>
+      </button>
   </div>
-  <div class="answers">
-
-    <p>
+  <div>
+    <p id="hidden-answer2">
       Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
       option providing access to a range of projects suitable for all skill levels.
     </p>
@@ -60,16 +61,19 @@
   <hr>
 
 
-    <div class="questions">
-    <h5>
+    <div class="question3 question">
+    <h4>
       Can I use Frontend Mentor projects in my portfolio?
-    </h5>
-    <button id="button" onclick="revealanswers()">
+    </h4>
+    <button onclick="reveal3()" id="hide-button2" style="display: none;">
+      <img id="images" src="./assets/images/icon-minus.svg" alt="icon-plus">
+      </button>
+    <button onclick="reveal3()" id="reveal-button2">
       <img id="images" src="./assets/images/icon-plus.svg" alt="icon-plus">
-    </button>
+      </button>
   </div>
-  <div class="answers">
-    <p>
+  <div>
+    <p id="hidden-answer3">
       Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
       way to showcase your skills to potential employers!
     </p>
@@ -77,17 +81,20 @@
   <hr>
 
 
-    <div class="questions">
-    <h5>
+    <div class="question4 question">
+    <h4>
       How can I get help if I'm stuck on a challenge?
     
-    </h5>
-    <button id="button" onclick="revealanswers()">
+    </h4>
+    <button onclick="reveal4()" id="hide-button3" style="display: none;">
+      <img id="images" src="./assets/images/icon-minus.svg" alt="icon-plus">
+      </button>
+    <button onclick="reveal4()" id="reveal-button3">
       <img id="images" src="./assets/images/icon-plus.svg" alt="icon-plus">
-    </button>   
-  </div>
-  <div class="answers">
-    <p>
+    </button>
+    </div>
+  <div >
+    <p id="hidden-answer4">
       The best place to get help is inside Frontend Mentor's Discord community. There's a help 
       channel where you can ask questions and seek support from other community members.    
     </p>
